@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #23395d 0%, #11998e 100%);
+    color: #fff;
+}
+
+a.nav-link:hover {
+    color: #FFD700 !important; /* Amarelo destaque */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: middle;
+    filter: drop-shadow(0 2px 8px #11998e88);
+}
+
+.logo-home {
+    display: block;
+    margin: 0 auto 24px auto;
+    max-width: 180px;
+    height: auto;
+    filter: drop-shadow(0 4px 16px #11998e88);
+}
+
+.card, .card-chart {
+    background: rgba(255,255,255,0.10);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(35,57,93,0.25);
+    border: none;
+    color: #fff;
+}
+
+.card-title, .display-4, .lead, h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+}
+
+.btn-primary, .btn-lg {
+    background: linear-gradient(90deg, #23395d 0%, #11998e 100%);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 16px #11998e55;
+    border-radius: 8px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover, .btn-lg:hover {
+    background: linear-gradient(90deg, #11998e 0%, #23395d 100%);
+    box-shadow: 0 8px 24px #11998e88;
+    color: #fff;
+}
+
+footer {
+    font-size: 0.9rem;
+    background: linear-gradient(90deg, #23395d 0%, #11998e 100%);
+    color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+aside.bg-black {
+    background: linear-gradient(135deg, #23395d 0%, #11998e 100%) !important;
+    color: #fff !important;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(35,57,93,0.25);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    transition: background 0.2s;
+}
+
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+    background: rgba(17,153,142,0.15) !important;
+    color: #FFD700 !important;
+}
+
+.table {
+    color: #fff;
+    background: rgba(35,57,93,0.15);
+    border-radius: 8px;
+}
+
+.table th, .table td {
+    color: #fff;
+}
