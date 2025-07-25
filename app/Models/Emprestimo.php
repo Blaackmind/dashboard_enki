@@ -9,5 +9,20 @@ class Emprestimo extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['livro_id', 'usuario_id', 'data_inicio', 'data_fim', 'status'];
+    protected $fillable = ['livro_id', 'user_id', 'data_emprestimo', 'data_devolucao_prevista', 'status'];
+
+    public function user()
+    {
+        return $this->belongsTo(\App\Models\User::class, 'user_id');
+    }
+
+    public function livro()
+    {
+        return $this->belongsTo(\App\Models\Livro::class, 'livro_id');
+    }
+
+    public function multa()
+    {
+        return $this->hasOne(\App\Models\Multa::class, 'emprestimo_id');
+    }
 }

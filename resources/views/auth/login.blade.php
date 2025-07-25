@@ -7,7 +7,7 @@
     <style>
         body {
             min-height: 100vh;
-            background: linear-gradient(135deg, #23395d 0%, #11998e 100%);
+            background: linear-gradient(135deg,rgb(48, 108, 177) 0%, #153A5B 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,12 +42,12 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #23395d 0%, #11998e 100%);
+            background: linear-gradient(135deg, #2EC4F1 0%, #48E5C2 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 5px 15px rgba(17,153,142,0.15);
-            border: 3px solid #19e6a7;
+            box-shadow: 0 5px 15px #2EC4F122;
+            border: 3px solid #2EC4F1;
             overflow: hidden;
         }
         .logo img {
@@ -63,7 +63,7 @@
         }
         .login-header h1 {
             font-size: 28px;
-            color: #19e6a7;
+            color: #2EC4F1;
             margin-bottom: 10px;
             font-weight: 700;
         }
@@ -73,7 +73,7 @@
         }
         .divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, #19e6a7, transparent);
+            background: linear-gradient(to right, transparent, #2EC4F1, transparent);
             margin: 0 30px;
         }
         .login-body {
@@ -87,26 +87,26 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
-            color: #19e6a7;
+            color: #2EC4F1;
             font-size: 14px;
         }
         .form-control {
             width: 100%;
             padding: 12px 14px;
-            border: 1.5px solid #19e6a7;
+            border: 1.5px solid #2EC4F1;
             border-radius: 14px;
             font-size: 15px;
-            background: rgba(255,255,255,0.10);
-            color: #fff;
+            background: #E0E0E0;
+            color: #404040;
             transition: all 0.3s;
             box-sizing: border-box;
             box-shadow: none;
         }
         .form-control:focus {
-            border-color: #19e6a7 !important;
+            border-color: #2EC4F1 !important;
             outline: none;
-            box-shadow: 0 0 0 2px #19e6a799;
-            background: rgba(35,57,93,0.15);
+            box-shadow: 0 0 0 2px #2EC4F199;
+            background: #F5F5F5;
         }
         .form-footer {
             display: flex;
@@ -120,7 +120,7 @@
         }
         .remember-me input {
             margin-right: 8px;
-            accent-color: #19e6a7;
+            accent-color: #2EC4F1;
         }
         .remember-me label {
             color: #fff;
@@ -132,18 +132,18 @@
             cursor: pointer;
         }
         .forgot-password {
-            color: #19e6a7;
+            color: #2EC4F1;
             text-decoration: none;
             font-size: 13px;
             transition: color 0.3s;
         }
         .forgot-password:hover {
-            color: #23395d;
+            color: #185B8B;
         }
         .btn-login {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(90deg, #23395d 0%, #11998e 100%);
+            background: linear-gradient(90deg, #2EC4F1 0%, #185B8B 100%);
             color: #fff;
             border: none;
             border-radius: 10px;
@@ -152,11 +152,11 @@
             cursor: pointer;
             transition: all 0.3s;
             margin-bottom: 20px;
-            box-shadow: 0 4px 16px #11998e55;
+            box-shadow: 0 4px 16pxrgb(121, 117, 117);
         }
         .btn-login:hover {
-            background: linear-gradient(90deg, #11998e 0%, #23395d 100%);
-            box-shadow: 0 8px 24px #11998e88;
+            background: linear-gradient(90deg, #185B8B 0%, #2EC4F1 100%);
+            box-shadow: 0 8px 24px #DADADA;
         }
         .register-link {
             text-align: center;
@@ -164,12 +164,12 @@
             font-size: 14px;
         }
         .register-link a {
-            color: #19e6a7;
+            color: #2EC4F1;
             text-decoration: none;
             font-weight: 500;
         }
         .error-message {
-            color: #FFD700;
+            color: #EF5350;
             font-size: 12px;
             margin-top: 5px;
         }

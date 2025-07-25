@@ -24,6 +24,7 @@ class User extends Authenticatable implements JWTSubject
         'password',
         'telefone',
         'endereco',
+        'perfil',
     ];
 
     /**
@@ -54,5 +55,20 @@ class User extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+    public function emprestimos()
+    {
+        return $this->hasMany(\App\Models\Emprestimo::class, 'user_id');
+    }
+
+    // Métodos auxiliares para roles
+    public function isAdmin()
+    {
+        return $this->perfil === 'admin';
+    }
+    public function isBibliotecario()
+    {
+        return $this->perfil === 'bibliotecario';
     }
 }

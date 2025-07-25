@@ -6,11 +6,11 @@
     <title>Recuperar Senha - ENKI</title>
     <style>
         :root {
-            --primary: #4FA0D7;
-            --secondary: #FFC107;
-            --dark: #2C5F8A;
-            --light: #F8F9FA;
-            --gray: #6C757D;
+            --primary: #48E5C2;
+            --secondary: #F3D3BD;
+            --dark: #333333;
+            --light: #FCFAF9;
+            --gray: #5E5E5E;
         }
         
         * {
@@ -27,9 +27,8 @@
             align-items: center;
             min-height: 100vh;
             padding: 20px;
-            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg');
-            background-size: cover;
-            background-position: center;
+            background-image: none;
+            background: var(--light);
         }
         
         .auth-container {
@@ -57,11 +56,11 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background-color: white;
+            background-color: var(--secondary);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px #F3D3BD22;
             border: 3px solid var(--primary);
             overflow: hidden;
         }
@@ -79,7 +78,7 @@
         
         .auth-header h1 {
             font-size: 28px;
-            color: var(--dark);
+            color: var(--primary);
             margin-bottom: 10px;
             font-weight: 700;
         }
@@ -91,7 +90,7 @@
         
         .divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, #ddd, transparent);
+            background: linear-gradient(to right, transparent, var(--secondary), transparent);
             margin: 0 30px;
         }
         
@@ -108,31 +107,32 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
-            color: var(--dark);
+            color: var(--primary);
             font-size: 14px;
         }
         
         .form-control {
             width: 100%;
             padding: 15px;
-            border: 1px solid #ddd;
+            border: 1px solid var(--gray);
             border-radius: 8px;
             font-size: 15px;
             transition: all 0.3s;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: var(--secondary);
+            color: var(--dark);
         }
         
         .form-control:focus {
             border-color: var(--primary);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(79, 160, 215, 0.2);
+            box-shadow: 0 0 0 3px #48E5C233;
         }
         
         .btn-auth {
             width: 100%;
             padding: 15px;
             background: var(--primary);
-            color: white;
+            color: var(--light);
             border: none;
             border-radius: 8px;
             font-size: 16px;
@@ -145,7 +145,7 @@
         .btn-auth:hover {
             background: var(--dark);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px #5E5E5E;
         }
         
         .auth-footer {

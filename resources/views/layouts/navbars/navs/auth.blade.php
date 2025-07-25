@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #E6F2F8;
+            background-color: #FCFAF9;
             font-family: 'Segoe UI', sans-serif;
         }
         .card {
@@ -16,11 +16,11 @@
             border-radius: 10px;
         }
         .card-header {
-            background-color: #4FA0D7 !important;
-            color: white;
+            background-color: #48E5C2 !important;
+            color: #333333;
         }
         a {
-            color: #009B8F;
+            color: #48E5C2;
         }
     </style>
 </head>

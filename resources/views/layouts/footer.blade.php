@@ -1,3 +1,3 @@
-<footer class="text-center text-white py-3 mt-auto" style="background-color: #4FA0D7;">
-    <small>© {{ date('Y') }} ENKI Biblioteca Digital. Todos os direitos reservados.</small>
+<footer class="text-center py-3 mt-auto">
+    <span>&copy; {{ date('Y') }} ENKI - Sistema de Biblioteca</span>
 </footer>

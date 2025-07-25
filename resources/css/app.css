@@ -1,25 +1,45 @@
+:root {
+  --azul-escuro: #0A2342;
+  --azul-medio: #185B8B;
+  --azul-claro: #2EC4F1;
+  --azul-card: #153A5B;
+  --azul-card2: #1B4D72;
+  --azul-card3: #2176AE;
+  --ciano: #00D9F5;
+  --branco: #FFFFFF;
+  --cinza-claro: #B0BEC5;
+  --verde-logo:#38e7c1;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #23395d 0%, #11998e 100%);
-    color: #fff;
+    background-color: #fafafa;
+    color: var(--branco);   
 }
 
 a.nav-link:hover {
-    color: #FFD700 !important; /* Amarelo destaque */
+    color: var(--ciano) !important;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
+    height: 48px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-brand img {
+    width: 40px;
     height: 40px;
-    margin-right: 12px;
+    margin-right: 4px;
     vertical-align: middle;
-    filter: drop-shadow(0 2px 8px #11998e88);
+    filter: drop-shadow(0 2px 8px #19e6e6aa);
+    object-fit: cover;
+    clip-path: circle(48% at 48% 48%);
+    position: relative;
+    top: -4px;
 }
 
 .logo-home {
@@ -27,72 +47,210 @@ a.nav-link:hover {
     margin: 0 auto 24px auto;
     max-width: 180px;
     height: auto;
-    filter: drop-shadow(0 4px 16px #11998e88);
+    border-radius: 12px;
+    filter: drop-shadow(0 4px 16px #ffffffaa);
 }
 
-.card, .card-chart {
-    background: rgba(255,255,255,0.10);
+.card, .card-chart, .auth-card, .login-card {
+    background: linear-gradient(120deg, var(--azul-card) 60%, var(--azul-card2) 100%);
     border-radius: 18px;
-    box-shadow: 0 8px 32px 0 rgba(35,57,93,0.25);
+    box-shadow: 0 8px 32px 0 var(--azul-escuro)44;
     border: none;
-    color: #fff;
+    color: var(--branco);
 }
 
-.card-title, .display-4, .lead, h1, h2, h3, h4, h5, h6 {
-    color: #fff !important;
+.card-title, .display-4, .lead, h1, h2, h3, h4, h5, h6, label, .nav-link, .sidebar, .menu, .navbar, .footer, .form-control, input, select, textarea {
+    color: var(--branco) !important;
 }
 
-.btn-primary, .btn-lg {
-    background: linear-gradient(90deg, #23395d 0%, #11998e 100%);
+.btn-primary, .btn-lg, .login-card button, .auth-card button {
+    background: var(--azul-card2);
     border: none;
-    color: #fff;
+    color: var(--azul-escuro);
     font-weight: 600;
-    box-shadow: 0 4px 16px #11998e55;
+    box-shadow: 0 4px 16px var(--azul-medio);
     border-radius: 8px;
     transition: background 0.3s, box-shadow 0.3s;
 }
 
-.btn-primary:hover, .btn-lg:hover {
-    background: linear-gradient(90deg, #11998e 0%, #23395d 100%);
-    box-shadow: 0 8px 24px #11998e88;
-    color: #fff;
+.btn-primary:hover, .btn-lg:hover, .login-card button:hover, .auth-card button:hover {
+    background: var(--laranja);
+    box-shadow: 0 8px 24px var(--azul-claro);
+    color: var(--azul-escuro);
 }
 
 footer {
     font-size: 0.9rem;
-    background: linear-gradient(90deg, #23395d 0%, #11998e 100%);
-    color: #fff;
+    background: var(--azul-card2);
+    color: var(--branco);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-aside.bg-black {
-    background: linear-gradient(135deg, #23395d 0%, #11998e 100%) !important;
-    color: #fff !important;
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
-    box-shadow: 0 8px 32px 0 rgba(35,57,93,0.25);
+aside.bg-black, .sidebar, .menu {
+    background: linear-gradient(135deg, var(--azul-card2) 0%, var(--azul-escuro) 100%) !important;
+    color: var(--branco) !important;
+}
+
+.navbar {
+    background: var(--azul-card2) !important;
+    color: var(--branco) !important;
+
 }
 
 .nav-link {
-    color: #fff !important;
-    font-weight: 500;
-    border-radius: 6px;
-    margin-bottom: 4px;
-    transition: background 0.2s;
+  color: var(--branco) !important;
 }
 
 .nav-link.active, .nav-link:focus, .nav-link:hover {
-    background: rgba(17,153,142,0.15) !important;
-    color: #FFD700 !important;
+  background: var(--azul-claro) !important;
+  color: var(--azul-escuro) !important;
 }
 
 .table {
-    color: #fff;
-    background: rgba(35,57,93,0.15);
+    color: var(--azul-escuro);
+    background: var(--branco);
     border-radius: 8px;
 }
 
 .table th, .table td {
-    color: #fff;
+    color: var(--azul-claro);
+}
+
+.form-control, input, select, textarea {
+    background: var(--azul-card3);
+    border: 1.5px solid var(--azul-claro);
+    color: var(--branco);
+    border-radius: 14px;
+}
+
+.form-control:focus, input:focus, select:focus, textarea:focus {
+    border-color: var(--ciano) !important;
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ciano);
+    background: var(--azul-medio);
+    color: var(--branco);
+}
+
+label {
+    color: var(--azul-claro);
+    font-weight: 500;
+}
+
+.logo-navbar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 8px 0 0;
+    position: static;
+    box-sizing: content-box;
+    padding: 0;
+    border: none;
+}
+
+.logo-navbar img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: none;
+    box-shadow: none;
+  }
+
+a, a:visited, a:active {
+    color: var(--azul-claro);
+}
+
+a:hover {
+    color: var(--ciano);
+}
+
+.navbar, footer, .sidebar, .menu {
+    background: linear-gradient(135deg, #153A5B 0%, #2176AE 100%) !important;
+    color: var(--branco) !important;
+    box-shadow: 0 8px 32px 0 rgba(10, 35, 66, 0.35);
+    border-radius: 0;
+    border-top: 1.5px solid #2EC4F1;
+}
+
+.navbar {
+    min-height: 48px;
+    height: 48px;
+    margin-bottom: 0;
+    border-bottom: px solid #2EC4F1;
+    border-radius: 0;
+}
+
+footer {
+    width: 100%;
+    border-top: 1.5px solid #2EC4F1;
+    border-bottom: none;
+
+}
+
+.card, .card-chart, .auth-card, .login-card, .form-control, input, select, textarea, .logo-navbar {
+    border-radius: 0 !important;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .table-responsive, .table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table th, .table td {
+    white-space: nowrap;
+  }
+  .card, .card-chart, .auth-card, .login-card {
+    padding: 8px !important;
+  }
+  .form-control, input, select, textarea {
+    width: 100% !important;
+    min-width: 0;
+  }
+  .modal-dialog {
+    max-width: 98vw;
+    margin: 0 auto;
+  }
+}
+
+/* --- FEEDBACK VISUAL DE ERRO --- */
+.is-invalid {
+  border-color: #ff3860 !important;
+  box-shadow: 0 0 0 2px #ff386055;
+  background: #fff0f3 !important;
+  color: #b71c1c !important;
+}
+.invalid-feedback {
+  color: #ff3860;
+  font-size: 0.95em;
+  margin-top: 2px;
+  display: block;
+}
+
+/* Mensagens globais de sucesso/erro */
+.alert-success {
+  background: #e6fffa;
+  color: #00695c;
+  border: 1.5px solid #00bfae;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 12px;
+}
+.alert-danger, .alert-error {
+  background: #fff0f3;
+  color: #b71c1c;
+  border: 1.5px solid #ff3860;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 12px;
 }
